@@ -49,7 +49,7 @@ The predicted human behavior for this stack of `currentThoughts` would involve o
 
 ## The Code For Addiction
 
-Addiction is a mutation in the `Thought` code that appends a an additional `Thought` for a constant `ADDICTIVE_DESIRE`. 
+Addiction is a mutation in the `Thought` code that appends an additional `Thought` for a constant `ADDICTIVE_DESIRE`. 
 
 ```
 define ADDICTIVE_DESIRE = "I should drink alcohol."

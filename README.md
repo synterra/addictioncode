@@ -148,7 +148,7 @@ An addict who continues this pattern will inevitably end up in a psychiatric ins
 
 ## How Coding The Mind Can Help Recovery
 
-I've found this method of addiction analysis extremely helpful in my own recovery. It gave me the means to overcome the largest obstacles in my recovery.
+I've found this method of addiction analysis extremely helpful in my own recovery. It gave me the means to overcome my largest obstacles by analyzing them in a familiar way.
 
 1. The logic of the code explained why it's virtually impossible for the addict to overcome their addiction alone. You compete ineterally against something that hijacked 50% of your thoughts. Addicts need outside help and support to bring balance to the percentage of thinking about their `ADDICTIVE_DESIRE`.
 

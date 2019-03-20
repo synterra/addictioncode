@@ -66,12 +66,12 @@ In the addicted mind, the stack of `currentThoughts` becomes inundated with new 
 foreach thought in currentThoughts
    print thought.idea
 
-> "The pizza in that commercial looked tasty."
-> "I should drink alcohol."
-> "When does the new season of my favorite show start?"
-> "I should drink alcohol."
-> "I stayed up way too late last night."
-> "I should drink alcohol."
+> The pizza in that commercial looked tasty.
+> I should drink alcohol.
+> When does the new season of my favorite show start?
+> I should drink alcohol.
+> I stayed up way too late last night.
+> I should drink alcohol.
 ```
 
 ## The Slow Crush Of Repetition
@@ -94,12 +94,12 @@ In a mind with an `ADDICTIVE_DESIRE`, these `currentThoughts` could lead to `Act
 foreach thought in currentThoughts
    print thought.idea
 
-> "I have to finish that important report by the end of today."
-> "I should drink alcohol."
-> "The meeting this afternoon will be long and boring."
-> "I should drink alcohol."
-> "Time to drive home from work."
-> "I should drink alcohol."
+> I have to finish that important report by the end of today.
+> I should drink alcohol.
+> The meeting this afternoon will be long and boring.
+> I should drink alcohol.
+> Time to drive home from work.
+> I should drink alcohol.
 ```
 
 This illustrates the subversive and overwhelming nature of addiction. 
@@ -114,12 +114,12 @@ The mutation of `Thought` makes an addict struggle to take `Actions` to get help
 foreach thought in currentThoughts
    print thought.idea
 
-> "I should stay home and not party tonight."
-> "I should drink alcohol."
-> "I'm too hungover to get anything done today."
-> "I should drink alcohol."
-> "I should stop drinking."
-> "I should drink alcohol."
+> I should stay home and not party tonight.
+> I should drink alcohol.
+> I'm too hungover to get anything done today.
+> I should drink alcohol.
+> I should stop drinking.
+> I should drink alcohol.
 ```
 
 Unfortunately, until a human's addiction is fully understood and diagnosed, all their selfish and destructive human behavior is interpreted — both by others and by the addict themselves — to be willing decisions. To the addict, the `ADDICTIVE_DESIRE` just seems like a normal part of thinking. Their inability to overcome their `Thought` mutation is seen as personal weakness, or worse, indifference. 
@@ -132,16 +132,16 @@ When exposed to the `ADDICTIVE_DESIRE` itself, the recursive nature of the mutat
 foreach thought in currentThoughts
    print thought.idea
 
-> "I'll have a beer.",
-> "I should drink alcohol.",
-> "I'll order a shot too.",
-> "I should drink alcohol.",
-> "I'll order more beers and shots.",
-> "I should drink alcohol.",
-> "I'm feeling dizzy.",
-> "I should drink alcohol.",
-> "I can't walk straight.",
-> "I should drink alcohol."
+> I'll have a beer.
+> I should drink alcohol.
+> I'll order a shot too.
+> I should drink alcohol.
+> I'll order more beers and shots.
+> I should drink alcohol.
+> I'm feeling dizzy.
+> I should drink alcohol.
+> I can't walk straight.
+> I should drink alcohol.
 ```
 
 An addict who continues this pattern will inevitably end up in a psychiatric institution, in jail, or dead.

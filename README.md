@@ -47,20 +47,40 @@ function currentThoughtsIntoActions():
 
 The predicted human behavior for this stack of `currentThoughts` would involve ordering pizza, checking Netflix, and getting to bed early.
 
+But an important feature of all `Thoughts` is that they eventually disappear. After `consider()`ing and `execute()`ing the `Thoughts`, they run a `isSatisfied()` routine:
+
+```
+object Thought(idea):
+  this.idea = idea;
+  
+  isSatisfied():
+    if satisfied:
+      thoughtGoesAway()
+```
+
+If a `Thought` is never satisfied, it persists until satisfaction (by whatever means) is met.
+
 ## The Code For Addiction
 
-Addiction is a mutation in the `Thought` code that appends an additional `Thought` for a constant `ADDICTIVE_DESIRE`. 
+Addiction is a mutation in the `Thought` code that breaks the `isSatisfied()` routine, for a `Thought` based on a constant `ADDICTIVE_DESIRE`. As a result, the `ADDICTIVE_DESIRE` never goes away. 
 
 ```
 define ADDICTIVE_DESIRE = "I should drink alcohol."
 
 object Thought(idea):
-    this.idea = idea
-    if idea is not ADDICTIVE_DESIRE:
-        new Thought(ADDICTIVE_DESIRE)
+  this.idea = idea
+    
+  if idea is ADDICTIVE_DESIRE:
+    isSatisfied():
+      return 'no'
+      
+  else:
+    isSatisfied():
+      if satisfied:
+        thoughtGoesAway()
 ```
 
-In the addicted mind, the stack of `currentThoughts` becomes inundated with new `Thoughts` of the `ADDICTIVE_DESIRE`. 
+In the addicted mind, the stack of `currentThoughts` becomes inundated with new `Thoughts` of the `ADDICTIVE_DESIRE`, because it never resolves.
 
 ```
 foreach thought in currentThoughts
@@ -78,7 +98,7 @@ foreach thought in currentThoughts
 
 These `Thoughts` of `ADDICTIVE_DESIRE` seem like harmless noise, even easy to ignore. The brain continues to process stimuli into human behavior, without any sign of general malfunction. Irrational and dangerous behavior is excused as being occasional and unusual, an anomaly in an otherwise heathy system.
 
-However, because `Thoughts` of `ADDICTIVE_DESIRE` are being created in equal numbers to normal `Thoughts`, eventually the `Actions` become irresponsible, unhealthy, and dangerous. Here's another stack of normal `Thoughts`:
+However, because `Thoughts` of `ADDICTIVE_DESIRE` never can be resolved, eventually the `Actions` become irresponsible, unhealthy, and dangerous. Here's another stack of normal `Thoughts`:
 
 ```
 currentThoughts = [
